@@ -1,0 +1,23 @@
+{
+  "name": "javaBoilerplate",
+  "displayName": "Java Boilerplate Snippets",
+  "description": "Boilerplate code snippet for JAVA development",
+  "version": "0.0.1",
+  "publisher": "VEDANTSAREEN",  
+  "icon": "icon.jpg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CYBERSAREEN/Snippets.git"
+  },
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "java",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
