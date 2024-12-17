@@ -1,4 +1,4 @@
-![Repository Icon](icon.png)
+![Repository Icon](icon.jpg)
 
 # **Java Boilerplate Code Generator - Version 0.0.2**
 
