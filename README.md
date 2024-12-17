@@ -1,151 +1,197 @@
-# Java Boilerplate Code Generator - **Version 0.0.1**
+# **Java Boilerplate Code Generator - Version 0.0.2**
 
-Welcome to  **Java Boilerplate Code Generator** , your one-stop tool for generating essential Java code snippets efficiently. This extension is designed to save time and effort by providing you with ready-to-use code structures, helping you focus on logic and problem-solving.
+Welcome to  **Java Boilerplate Code Generator** , the go-to extension for generating ready-to-use Java snippets efficiently. With  **Version 0.0.2** , we’ve added powerful input handling features, new code templates, and refined existing snippets to enhance your Java development workflow.
 
 ---
 
-## 🔥 **What’s in Version 0.0.1** 🔥
+## 🔥 **What’s New in Version 0.0.2** 🔥
 
-The latest version introduces **new features** for enhanced functionality, making coding in Java even more intuitive and fast. Here’s what’s included:
-
-### 🆕 **New Features**
+### 🆕 **New Features & Improvements**
 
 1. **Advanced Input Handling** :
 
-   The extension now supports advanced input handling, making it easier to handle multiple types of inputs, arrays, and matrices.
+* Snippets to easily handle **array inputs** and  **2D matrix inputs** .
+* New snippets for printing arrays and 2D jagged arrays.
 
-1. **Input Functionality** :
+1. **Improved Loop Snippets** :
 
-* Automatically adds `import java.util.Scanner;` at the top for snippets requiring user input.
-* Inserts `Scanner input = new Scanner(System.in);` inside the main method boilerplate for easy access.
+* Standard `for`, `foreach`, and `while` loops now come with default ranges and placeholders for quick modifications.
 
-1. **Printing Snippets** :
+1. **Enhanced Class Templates** :
 
-* `print`: Inserts `System.out.print("Enter your text here");`.
-* `println`: Inserts `System.out.println("Enter your text here");`.
+* `Public`, `Private`, and `Protected` class templates are streamlined for consistency.
+* Integrated **Scanner** for user input in the **main method** boilerplate.
 
-1. **Loop Templates** :
+1. **Updated Printing Templates** :
 
-* **For Loop** : Generates:
-  ``java for (int i = 0; i < range; i++) { // TODO: your code here } ``
-* **For-Each Loop** : Generates:
-  ``java for (auto value : range) { // TODO: your code here } ``
-* **While Loop** : Generates:
-  ``java while (value < range) { // TODO: your code here } ``
-
-1. **Updated Class Templates** :
-
-   Boilerplate for `public`, `private`, and `protected` classes now integrates Scanner functionality where relevant.
+* Added simple print and println statements for quicker outputs.
 
 ---
 
 ## 🚀 **How to Use the Extension**
 
 1. **Install the Extension** :
-
    Download and install the extension from the [VS Code Marketplace](https://chatgpt.com/c/675d7ae7-5cd4-8002-a915-0979abfb7828#).
+2. **Trigger a Snippet** :
 
-1. **Trigger a Snippet** :
-
-* Start typing the prefix (e.g., `puc`, `println`, `multiinput`) and press **Enter** or  **Tab** .
-* The corresponding code snippet will auto-expand in your editor.
+* Start typing the prefix (e.g., `puc`, `for`, `arrin`) and press **Enter** or  **Tab** .
+* The corresponding code snippet will expand in your editor.
 
 1. **Modify Placeholders** :
 
-* Navigate through placeholders (highlighted fields) and replace them with your custom values.
+* Use the highlighted fields to customize the code according to your needs.
 
 ---
 
 ## 🛠️ **Full List of Snippets**
 
-| **Snippet Prefix** | **Purpose**           | **Generated Code**                                              |
-| ------------------------ | --------------------------- | --------------------------------------------------------------------- |
-| `puc`                  | Public Class Boilerplate    | Public class template with `Scanner`.                               |
-| `prc`                  | Private Class Boilerplate   | Private class template.                                               |
-| `proc`                 | Protected Class Boilerplate | Protected class template.                                             |
-| `pcpsvm`               | Main Method Boilerplate     | Main method with `Scanner`.                                         |
-| `print`                | Print Statement             | `System.out.print("Enter your text here");`                         |
-| `println`              | Print Line Statement        | `System.out.println("Enter your text here");`                       |
-| `for`                  | For Loop                    | Generates a standard for loop.                                        |
-| `foreach`              | For-Each Loop               | Generates a for-each loop.                                            |
-| `while`                | While Loop                  | Generates a while loop.                                               |
-| `multiinput`           | Multiple Input Types        | Generates code for taking multiple input types (int, double, string). |
-| `arrayinput`           | Array Input                 | Generates code for taking array inputs.                               |
-| `matrixinput`          | Matrix Input                | Generates code for taking 2D matrix inputs.                           |
+| **Snippet Prefix** | **Purpose**           | **Generated Code**                                  |
+| ------------------------ | --------------------------- | --------------------------------------------------------- |
+| `puc`                  | Public Class Boilerplate    | Generates a public class with Scanner for input.          |
+| `prc`                  | Private Class Boilerplate   | Generates a private class template.                       |
+| `proc`                 | Protected Class Boilerplate | Generates a protected class template.                     |
+| `start`                | Main Method Boilerplate     | Generates the main method with Scanner for input.         |
+| `print`                | Print Statement             | `System.out.print("Enter your text here");`             |
+| `println`              | Print Line Statement        | `System.out.println("Enter your text here");`           |
+| `for`                  | For Loop                    | Generates a standard for loop with a default range of 10. |
+| `foreach`              | For-Each Loop               | Generates a for-each loop for iterating over an array.    |
+| `while`                | While Loop                  | Generates a while loop with a default range of 10.        |
+| `arrin`                | Array Input                 | Generates input handling for a single-dimensional array.  |
+| `printarr`             | Printing Array              | Generates code to print all elements of an array.         |
+| `arr2din`              | 2D Matrix Input             | Generates input handling for a two-dimensional matrix.    |
+| `print2d`              | Print 2D Jagged Array       | Generates code to print a 2D jagged array.                |
+
+---
+
+## 📚 **Snippet Details**
+
+Here are some examples of how the new and updated snippets work:
+
+### 🔹 **1. Public Class Boilerplate** (`puc`)
+
+Generates a public class template with Scanner for user input:
+
+```java
+import java.util.Scanner;
+public class program {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        // TODO: your code here
+    }
+}
+```
+
+### 🔹 **2. For Loop** (`for`)
+
+Generates a standard for loop:
+
+```java
+int range = 10; //Range by default is set to 10
+for (int i = 0; i < range; i++) {
+    // TODO: your code here
+}
+```
+
+### 🔹 **3. Advanced Input Handling - Array Inputs** (`arrin`)
+
+Generates code for taking single-dimensional array input:
+
+```java
+int n = size;
+int[] arr = new int[n];
+System.out.println("Enter " + n + " integers:");
+for (int i = 0; i < n; i++) {
+    arr[i] = input.nextInt();
+}
+```
+
+### 🔹 **4. Advanced Input Handling - Matrix Inputs** (`arr2din`)
+
+Generates code for taking a two-dimensional matrix as input:
+
+```java
+int rows = rows;
+int cols = cols;
+int[][] matrix = new int[rows][cols];
+System.out.println("Enter the matrix elements:");
+for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < cols; j++) {
+        matrix[i][j] = input.nextInt();
+    }
+}
+```
+
+### 🔹 **5. Printing Array** (`printarr`)
+
+Generates a for-each loop for printing array elements:
+
+```java
+for (int value : arr) {
+    System.out.print(value + " ");
+}
+```
 
 ---
 
 ## 🎯 **Planned Features for Future Versions**
 
-1. **Integration with IntelliSense** :
+1. **Customizable Snippets** :
 
-* Real-time suggestions based on code context.
+* Allow users to configure placeholders dynamically.
 
-1. **Customizable Placeholders** :
+1. **File Handling Templates** :
 
-* Allow users to define their own placeholder values during snippet generation.
+* Add snippets for reading/writing files using `BufferedReader` and `PrintWriter`.
 
-1. **Enhanced Error Handling** :
+1. **Enhanced Loops** :
 
-* Include inline comments and reminders to close `Scanner` objects to prevent resource leaks.
+* Include `do-while` loops and nested loops.
 
-1. **Loop Variants** :
+1. **Real-Time IntelliSense Integration** :
 
-* Add templates for `do-while` loops and nested loops.
-
-1. **Input/Output File Templates** :
-
-* Snippets for reading from and writing to files using `File` and `BufferedReader`.
-
-1. **More IDE-Specific Optimizations** :
-
-* Fine-tuned settings for better compatibility with VS Code themes and layouts.
+* Snippets that adapt to the context of your code.
 
 ---
 
-## ✨ **Suggestions for Ms. Suneha Passi** ✨
+## 🏆 **Why Use Java Boilerplate Code Generator?**
 
-As a fellow 2nd-year BE-CSE student, Ms. Passi could bring fresh perspectives to the extension.
-
----
-
-## 🏆 **Why Use This Extension?**
-
-* **Time-Saving** : Reduce boilerplate code-writing time by 70%.
-* **Error-Free Code** : Auto-generate syntax-perfect Java code templates.
-* **Beginner-Friendly** : Great for students and newcomers to Java.
-* **Flexible** : Covers common use cases with scope for customization.
+* **Time-Saving** : Reduces repetitive coding tasks.
+* **Error-Free** : Generates syntax-perfect code templates.
+* **Beginner-Friendly** : Makes Java coding easier for students and newcomers.
+* **Versatile** : Covers input handling, loops, and common boilerplate code.
 
 ---
 
 ## ❤️ **Contribute to This Project**
 
-We welcome contributions from the community! Whether you’re a beginner or a seasoned coder, your ideas can make a difference.
+We welcome your contributions! To add more snippets:
 
-1. Fork this repository.
-2. Add or modify snippets in the `snippets.json` file.
-3. Submit a pull request with a brief description of your changes.
+1. Fork the repository.
+2. Add or update code in the `snippets.json` file.
+3. Submit a pull request with your changes.
 
 ---
 
 ## 📈 **Metrics & Impact**
 
-* **100+ Installs** (and counting!)
-* **Positive Feedback** : Users report increased productivity.
-* **Community Growth** : Active contributors from around the globe.
+* **150+ Installs** (and growing!)
+* **Positive Feedback** : Students and developers report improved productivity.
+* **Community-Driven** : Contributions from developers around the globe.
 
 ---
 
 ## 🤝 **Contact**
 
-Have questions, suggestions, or feedback? Feel free to reach out:
+Have suggestions or feedback? Let’s connect!
 
 * **Creator** : Vedant Sareen
-* **Email** : [securecybernetics@gmail.com](https://chatgpt.com/c/securecybernetics@gmail.com)
-* **GitHub** : [CYBERSAREEN (VEDANTSAREEN)](https://github.com/CYBERSAREEN)
+* **Email** : [securecybernetics@gmail.com](mailto:securecybernetics@gmail.com)
+* **GitHub** : [CYBERSAREEN](https://github.com/CYBERSAREEN)
 
 ---
 
 ## 📜 **License**
 
-This extension is licensed under the  **MIT License** . You’re free to use, modify, and distribute it, provided you include appropriate credits.
+This extension is licensed under the  **MIT License** . Feel free to use, modify, and distribute it while giving proper credit.
+
+---
