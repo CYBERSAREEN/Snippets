@@ -1,3 +1,5 @@
+![Repository Icon](icon.png)
+
 # **Java Boilerplate Code Generator - Version 0.0.2**
 
 Welcome to  **Java Boilerplate Code Generator** , the go-to extension for generating ready-to-use Java snippets efficiently. With  **Version 0.0.2** , we’ve added powerful input handling features, new code templates, and refined existing snippets to enhance your Java development workflow.
