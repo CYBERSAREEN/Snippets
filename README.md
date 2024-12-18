@@ -1,77 +1,73 @@
-![Repository Icon](icon.jpg)
+# **Java Boilerplate Code Generator - Version 0.0.3**
 
-# **Java Boilerplate Code Generator - Version 0.0.2**
-
-Welcome to  **Java Boilerplate Code Generator** , the go-to extension for generating ready-to-use Java snippets efficiently. With  **Version 0.0.2** , we’ve added powerful input handling features, new code templates, and refined existing snippets to enhance your Java development workflow.
+Welcome to  **Java Boilerplate Code Generator** , the must-have extension for Java developers looking to save time and reduce boilerplate code writing. With  **Version 0.0.3** , we've introduced new input templates, refined existing features, and added tools for seamless coding.
 
 ---
 
-## 🔥 **What’s New in Version 0.0.2** 🔥
+## 🔥 **What’s New in Version 0.0.3** 🔥
 
-### 🆕 **New Features & Improvements**
+### 🆕 **New Features & Enhancements**
 
-1. **Advanced Input Handling** :
+1. **Advanced Input Snippets** :
 
-* Snippets to easily handle **array inputs** and  **2D matrix inputs** .
-* New snippets for printing arrays and 2D jagged arrays.
+* Support for **integer** and **string inputs** with ease using `takeint` and `takestr` snippets.
+* Added support for **array output** with `arrout`.
 
-1. **Improved Loop Snippets** :
+1. **Expanded Printing Templates** :
 
-* Standard `for`, `foreach`, and `while` loops now come with default ranges and placeholders for quick modifications.
+* Print statements (`print` and `println`) have been optimized for common scenarios.
 
-1. **Enhanced Class Templates** :
+1. **Refined Loop Templates** :
 
-* `Public`, `Private`, and `Protected` class templates are streamlined for consistency.
-* Integrated **Scanner** for user input in the **main method** boilerplate.
+* Included placeholders for dynamic ranges and values for all loop types (`for`, `foreach`, `while`).
 
-1. **Updated Printing Templates** :
+1. **Matrix Handling** :
 
-* Added simple print and println statements for quicker outputs.
+* Enhanced matrix input handling with `arr2din` for both structured and jagged arrays.
 
 ---
 
 ## 🚀 **How to Use the Extension**
 
 1. **Install the Extension** :
-   Download and install the extension from the [VS Code Marketplace](https://chatgpt.com/c/675d7ae7-5cd4-8002-a915-0979abfb7828#).
-2. **Trigger a Snippet** :
 
-* Start typing the prefix (e.g., `puc`, `for`, `arrin`) and press **Enter** or  **Tab** .
-* The corresponding code snippet will expand in your editor.
+* Download and install from the [VS Code Marketplace](https://example.com/).
+
+1. **Trigger a Snippet** :
+
+* Start typing the prefix (e.g., `puc`, `for`, `takeint`) and press **Enter** or **Tab** to expand the snippet.
 
 1. **Modify Placeholders** :
 
-* Use the highlighted fields to customize the code according to your needs.
+* Placeholders are highlighted for quick customization of variables and logic.
 
 ---
 
 ## 🛠️ **Full List of Snippets**
 
-| **Snippet Prefix** | **Purpose**           | **Generated Code**                                  |
-| ------------------------ | --------------------------- | --------------------------------------------------------- |
-| `puc`                  | Public Class Boilerplate    | Generates a public class with Scanner for input.          |
-| `prc`                  | Private Class Boilerplate   | Generates a private class template.                       |
-| `proc`                 | Protected Class Boilerplate | Generates a protected class template.                     |
-| `start`                | Main Method Boilerplate     | Generates the main method with Scanner for input.         |
-| `print`                | Print Statement             | `System.out.print("Enter your text here");`             |
-| `println`              | Print Line Statement        | `System.out.println("Enter your text here");`           |
-| `for`                  | For Loop                    | Generates a standard for loop with a default range of 10. |
-| `foreach`              | For-Each Loop               | Generates a for-each loop for iterating over an array.    |
-| `while`                | While Loop                  | Generates a while loop with a default range of 10.        |
-| `arrin`                | Array Input                 | Generates input handling for a single-dimensional array.  |
-| `printarr`             | Printing Array              | Generates code to print all elements of an array.         |
-| `arr2din`              | 2D Matrix Input             | Generates input handling for a two-dimensional matrix.    |
-| `print2d`              | Print 2D Jagged Array       | Generates code to print a 2D jagged array.                |
+| **Snippet Prefix** | **Purpose**           | **Generated Code**                          |
+| ------------------------ | --------------------------- | ------------------------------------------------- |
+| `puc`                  | Public Class Boilerplate    | Generates a public class with Scanner for input.  |
+| `prc`                  | Private Class Boilerplate   | Generates a private class template.               |
+| `proc`                 | Protected Class Boilerplate | Generates a protected class template.             |
+| `start`                | Main Method Boilerplate     | Generates the main method with Scanner for input. |
+| `takeint`              | Integer Input               | Reads an integer input using Scanner.             |
+| `takestr`              | String Input                | Reads a string input using Scanner.               |
+| `print`                | Print Statement             | Generates a single-line print statement.          |
+| `println`              | Print Line Statement        | Generates a print line statement.                 |
+| `for`                  | For Loop                    | Generates a standard for loop.                    |
+| `foreach`              | For-Each Loop               | Generates a for-each loop.                        |
+| `while`                | While Loop                  | Generates a while loop.                           |
+| `arrin`                | Array Input                 | Handles input for a single-dimensional array.     |
+| `arrout`               | Array Output                | Prints a single-dimensional array.                |
+| `arr2din`              | 2D Matrix Input             | Handles input for a 2D matrix.                    |
+| `arr2dout`             | 2D Matric output            | Handles Output for 2D array                       |
 
 ---
 
-## 📚 **Snippet Details**
+## 📚 **Snippet Examples**
 
-Here are some examples of how the new and updated snippets work:
-
-### 🔹 **1. Public Class Boilerplate** (`puc`)
-
-Generates a public class template with Scanner for user input:
+### 🔹 **Public Class Boilerplate** (`puc`)
 
 ```java
 import java.util.Scanner;
@@ -83,49 +79,13 @@ public class program {
 }
 ```
 
-### 🔹 **2. For Loop** (`for`)
-
-Generates a standard for loop:
+### 🔹 **Integer Input** (`takeint`)
 
 ```java
-int range = 10; //Range by default is set to 10
-for (int i = 0; i < range; i++) {
-    // TODO: your code here
-}
+int num = input.nextInt();
 ```
 
-### 🔹 **3. Advanced Input Handling - Array Inputs** (`arrin`)
-
-Generates code for taking single-dimensional array input:
-
-```java
-int n = size;
-int[] arr = new int[n];
-System.out.println("Enter " + n + " integers:");
-for (int i = 0; i < n; i++) {
-    arr[i] = input.nextInt();
-}
-```
-
-### 🔹 **4. Advanced Input Handling - Matrix Inputs** (`arr2din`)
-
-Generates code for taking a two-dimensional matrix as input:
-
-```java
-int rows = rows;
-int cols = cols;
-int[][] matrix = new int[rows][cols];
-System.out.println("Enter the matrix elements:");
-for (int i = 0; i < rows; i++) {
-    for (int j = 0; j < cols; j++) {
-        matrix[i][j] = input.nextInt();
-    }
-}
-```
-
-### 🔹 **5. Printing Array** (`printarr`)
-
-Generates a for-each loop for printing array elements:
+### 🔹 **Array Output** (`arrout`)
 
 ```java
 for (int value : arr) {
@@ -133,58 +93,103 @@ for (int value : arr) {
 }
 ```
 
+### 🔹 **2D Matrix Input** (`arr2din`)
+
+```java
+int rows = size;
+int cols = size;
+int[][] matrix = new int[rows][cols];
+System.out.println("Enter matrix elements:");
+for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < cols; j++) {
+        matrix[i][j] = input.nextInt();
+    }
+}
+```
+
 ---
 
 ## 🎯 **Planned Features for Future Versions**
 
-1. **Customizable Snippets** :
+1. **Dynamic Customization** :
 
-* Allow users to configure placeholders dynamically.
+* Allow users to configure placeholders and templates.
 
-1. **File Handling Templates** :
+1. **Streamlined File I/O** :
 
-* Add snippets for reading/writing files using `BufferedReader` and `PrintWriter`.
+* Add snippets for file reading and writing.
 
-1. **Enhanced Loops** :
+1. **Functional Programming** :
 
-* Include `do-while` loops and nested loops.
-
-1. **Real-Time IntelliSense Integration** :
-
-* Snippets that adapt to the context of your code.
+* Lambda expression and stream templates for modern Java workflows.
 
 ---
 
-## 🏆 **Why Use Java Boilerplate Code Generator?**
+## 🏆 **Why Choose Java Boilerplate Code Generator?**
 
-* **Time-Saving** : Reduces repetitive coding tasks.
-* **Error-Free** : Generates syntax-perfect code templates.
-* **Beginner-Friendly** : Makes Java coding easier for students and newcomers.
-* **Versatile** : Covers input handling, loops, and common boilerplate code.
+* **Efficiency** : Speeds up coding by reducing repetitive tasks.
+* **Accuracy** : Minimizes syntax errors with pre-written, tested templates.
+* **Flexibility** : Offers diverse boilerplate code for different use cases.
+* **Beginner-Friendly** : Ideal for students and newcomers to Java.
 
 ---
 
-## ❤️ **Contribute to This Project**
+## ❤️ **Contribute to the Project**
 
-We welcome your contributions! To add more snippets:
+Want to improve this extension? Follow these steps:
 
-1. Fork the repository.
-2. Add or update code in the `snippets.json` file.
+1. Fork the repository on GitHub.
+2. Add or update snippets in the `snippets.json` file.
 3. Submit a pull request with your changes.
 
 ---
 
-## 📈 **Metrics & Impact**
+## 📈 **Community Impact**
 
-* **150+ Installs** (and growing!)
-* **Positive Feedback** : Students and developers report improved productivity.
-* **Community-Driven** : Contributions from developers around the globe.
+* **150+ Installs** : Trusted by Java developers globally.
+* **Student Favorite** : Simplifies Java learning with easy-to-use templates.
+* **Collaborative Growth** : Feedback and contributions from the developer community.
 
 ---
 
+## 👌Features
+
+1. **Beginner-Friendly Snippets**
+
+   * Provides ready-to-use boilerplate code for public, private, and protected classes.
+   * Simplifies Java programming with essential structures and best practices.
+2. **Main Method Templates**
+
+   * Prepares main method boilerplates with `Scanner` input handling for quicker development.
+3. **Input Handling Snippets**
+
+   * **Take Integer Input (`takeint`)** : Quickly insert code for accepting integer input using `Scanner`.
+   * **Take String Input (`takestr`)** : Easily add a snippet for reading strings.
+4. **Output Snippets**
+
+   * **Print Statement (`print`)** : Generate single-line output code.
+   * **Print Line Statement (`println`)** : Add a `println` statement for output with a newline.
+5. **Loop Snippets**
+
+   * **For Loop (`for`)** : Insert a standard `for` loop template with a customizable range.
+   * **For-Each Loop (`foreach`)** : Generate code for iterating over arrays or collections.
+   * **While Loop (`while`)** : Add a basic `while` loop with default range variables.
+6. **Array Input and Output Handling**
+
+   * **Array Input (`arrin`)** : Quickly generate code to accept integer arrays as input.
+   * **Array Output (`arrout`)** : Insert a snippet for printing array elements in a single line.
+7. **2D Matrix Input and Output**
+
+   * **Matrix Input (`arr2din`)** : Template for accepting elements of a 2D matrix.
+   * **Matrix Output (`arr2dout`)** : Snippet to display a jagged 2D array in matrix format.
+
+---
+
+This feature-rich extension helps Java developers—especially beginners—write clean, efficient, and reusable code faster by reducing boilerplate and improving productivity.
+
 ## 🤝 **Contact**
 
-Have suggestions or feedback? Let’s connect!
+Feel free to reach out for suggestions or queries:
 
 * **Creator** : Vedant Sareen
 * **Email** : [securecybernetics@gmail.com](mailto:securecybernetics@gmail.com)
@@ -194,6 +199,6 @@ Have suggestions or feedback? Let’s connect!
 
 ## 📜 **License**
 
-This extension is licensed under the  **MIT License** . Feel free to use, modify, and distribute it while giving proper credit.
+Licensed under the  **MIT License** . Use, modify, and distribute this extension while giving proper credit.
 
 ---
